@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/k.ico" type="image/x-icon">
+    <link>
+    <title>魁拔</title>
+</head>
+
+<body>
+    <!-- 盒子 -->
+    <div class="header-container">
+        <!-- 可视区 -->
+        <div class="flex-x-cener">
+            <img class="logo" src="icons/ms-logo.png">
+            <!-- 导航栏 -->
+            <div id="headernavmain" class="header-nav-main">
+                <span class="nav-list-title on" data="k1">首页</span>
+                <span class="nav-list-title" data="k2">分类</span>
+                <span class="nav-list-title" data="k3">归档</span>
+                <span class="nav-list-title" data="k4">留言</span>
+                <span class="nav-list-title" data="k5">关于</span>
+                <span class="nav-list-title" data="k6">游行妖侠</span>
+            </div>
+
+            <div class="header-nav-setting">
+                <div class="setting-item-list">
+                    <!-- 可视区域的内容 -->
+                    <div class="item-title">
+                        <i class="icon iconfont icon-user2"></i>
+                        <i class="icon iconfont icon-sanjiao"></i>
+                    </div>
+                    <!-- 隐藏区域的内容 -->
+                    <div class="item-masker-container">
+                        <div class="masker-item">登录</div>
+                        <div class="masker-item">注册</div>
+                    </div>
+                </div>
+                <div class="setting-item-list">
+                    <!-- 可视区域的内容 -->
+                    <div class="item-title">
+                        <span>CN</span>
+                        <i class="icon iconfont icon-sanjiao"></i>
+                    </div>
+                    <!-- 隐藏区域的内容 -->
+                    <div class="item-masker-container">
+                        <div class="masker-item">EN</div>
+                        <div class="masker-item">青少年版</div>
+                    </div>
+                </div>
+                <div class="setting-item-list">
+                    <!-- 可视区域的内容 -->
+                    <div class="item-title">
+                        <i class="icon iconfont icon-Search"></i>
+                        <i class="icon iconfont icon-sanjiao"></i>
+                    </div>
+                    <!-- 隐藏区域的内容 -->
+                    <div class="item-masker-container">
+                        <input type="text" class="search-input">
+                        <i class="icon iconfont icon-Search"></i>
+                    </div>
+                </div>
+                <div class="setting-item-list">
+                    <!-- 可视区域的内容 -->
+                    <div class="item-title">
+                        <i class="icon iconfont icon-menu1"></i>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+          <!-- 导航的隐藏区域的内容 -->
+          <div class="navigator-masker-container"></div>
+        </div>
+
+        <!-- 遮罩层隐藏区域内容 -->
+    <div class="menu-masker-container"></div>
+
+    </div>
+
+    </div>
+
+    </div>
+</body>
+<!-- 黑夜白天切换 -->
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    var options = {
+        bottom: "32px",                 // default: '32px'
+        right: "32px",                  // default: '32px'
+        left: "unset",                  // default: 'unset'
+        time: "0.5s",                   // default: '0.3s'
+        mixColor: "#fff",               // default: '#fff'
+        backgroundColor: "#fff",        // default: '#fff'
+        buttonColorDark: "#262728",     // default: '#100f2c'
+        buttonColorLight: "#fff",       // default: '#fff'
+        saveInCookies: true,            // default: true,
+        label: "🌓",                    // default: ''
+        autoMatchOsTheme: true,         // default: true
+    };
+    let darkmode = new Darkmode(options);
+    darkmode.showWidget();
+</script>
+
+</html>
